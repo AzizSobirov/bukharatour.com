@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost&family=Lora:wght@500&family=Nunito&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: #262a34;
+}
+
+.font-lora {
+  font-family: "Lora", serif;
+}
+
+.font-jost {
+  font-family: "Jost", sans-serif;
+}
+
+.container {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1280px;
+}
+
+@media screen and (max-width: 1300px) {
+  .container {
+    padding: 0 20px;
+  }
+}
+@media screen and (max-width: 640px) {
+  .container {
+    padding: 0 15px;
+  }
+}
+@media screen and (max-width: 440px) {
+  .container {
+    padding: 0 12px;
+  }
+}
+
+.aside-link:hover .aside-link-icon,
+.aside-link.active .aside-link-icon {
+  @apply bg-primary;
+}
+
+.aside-link:hover .text-lg,
+.aside-link.active .text-lg {
+  @apply text-primary;
+}
+
+.aside-link:hover svg path,
+.aside-link.active svg path {
+  @apply fill-white;
+}
