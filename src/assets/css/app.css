@@ -1207,8 +1207,16 @@ body {
     height: 300px;
   }
 
+  .sm\:h-\[40px\]{
+    height: 40px;
+  }
+
   .sm\:w-\[32px\]{
     width: 32px;
+  }
+
+  .sm\:w-\[40px\]{
+    width: 40px;
   }
 
   .sm\:gap-5{
