@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./assets/css/app.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <title>Mexmonxonalar</title>
+  </head>
+
+  <body>
+    <!-- ============header============= -->
+    <header class="flex justify-around items-center h-[80px]">
+      <div>
+        <a href="./index.html"><img src="./assets/img/logo-dark.svg" /></a>
+      </div>
+
+      <div class="xs:hidden md:block">
+        <ul>
+          <li class="flex gap-6">
+            <a href="#">Asosiy</a>
+            <div class="flex gap-[15px] relative group">
+              Yetti pir
+              <svg
+                width="10"
+                height="7"
+                viewBox="0 0 10 7"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M0.469667 0.969703C0.762557 0.676803 1.23744 0.676803 1.53033 0.969703L5 4.4393L8.4697 0.969702C8.7626 0.676802 9.2374 0.676802 9.5303 0.969702C9.8232 1.2626 9.8232 1.7374 9.5303 2.0303L5.5303 6.03033C5.2374 6.32322 4.7626 6.32322 4.4697 6.03033L0.469667 2.0303C0.176777 1.7374 0.176777 1.2626 0.469667 0.969703Z"
+                  fill="#000"
+                />
+              </svg>
+
+              <div
+                class="absolute top-[24px] w-[368px] bg-white z-10 text-black rounded-[12px] p-6 hidden group-hover:block dropdown-menu"
+              >
+                <div class="pb-4">
+                  <a href="./1pir.html"
+                    >Аbduxoliq G’ijduvoniy quddisu sirrihu.</a
+                  >
+                </div>
+                <div class="border-y-[1px] py-4">
+                  <a href="./2pir.html"> Xoʻja Muhammad Orif ar-Revgariy. </a>
+                </div>
+                <div class="py-4">
+                  <a href="./3pir.html">
+                    Xoʻja Maxmud Anjir Fagʻnaviy maqbarasi.
+                  </a>
+                </div>
+                <div class="border-y-[1px] py-4">
+                  <a href="./4pir.html">
+                    Xoʻja Ali Romitaniyning yodgorlik majmui.
+                  </a>
+                </div>
+                <div class="py-4">
+                  <a href="./5pir.html">
+                    Xoja Muhammad Bobo Samosiy yodgorlik majmui.
+                  </a>
+                </div>
+                <div class="border-y-[1px] py-4">
+                  <a href="./6pir.html">
+                    Xoʻja Sayid Amir Kulol Buxoriy yodgorlik majmuasi.
+                  </a>
+                </div>
+                <div class="pt-4">
+                  <a href="./7pir.html">Bahouddin Naqshband.</a>
+                </div>
+              </div>
+            </div>
+            <a href="#">Borish uchun qo’llanma</a>
+            <a href="#">Restoranlar</a>
+            <a href="#">Mehmonxonalar</a>
+            <a href="#">Maqolalar</a>
+            <a href="#">Turist uchun</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="flex items-center gap-[13px]">
+        <div class="cursor-pointer">
+          <img src="./assets/img/language.svg" />
+        </div>
+        <div class="">UZ</div>
+        <div class="cursor-pointer">
+          <img src="./assets/img/arrowBottom.svg" />
+        </div>
+      </div>
+    </header>
+
+    <!-- Top -->
+    <section class="my-6 md:my-[70px] font-lora">
+      <div class="container flex flex-col items-start gap-5 md:gap-10">
+        <div
+          class="w-full flex flex-col sm:flex-row items-center justify-between"
+        >
+          <div class="text-2xl md:text-4xl lg:text-7xl font-lora font-semibold">
+            Mexmonxonalar
+          </div>
+          <label
+            for=""
+            class="mt-3 sm:mt-0 px-4 py-3 w-full max-w-[380px] md:w-[280px] lg:w-[380px] bg-gray-100 rounded-xl flex items-center justify-start"
+          >
+            <img src="./assets/img/icons/search.svg" alt="" />
+            <input
+              class="text-gray-400 ml-2 w-full font-jost"
+              type="search"
+              placeholder="Mexmonxona nomini kiriting"
+              oninput="filterPosts(this.value)"
+            />
+          </label>
+        </div>
+        <div
+          class="w-full max-w-full overflow-x-scroll lg:overflow-hidden flex items-center justify-start font-inter gap-2 sm:gap-4"
+        >
+          <div
+            class="py-3 px-4 bg-primary text-white flex items-center justify-center border border-primary hover:bg-primary hover:text-white hover:border-primary transition duration-200 cursor-pointer ease-in whitespace-nowrap"
+          >
+            <div class="text-sm sm:text-base">Barcha Mexmonxonalar</div>
+          </div>
+          <div
+            class="py-3 px-4 flex items-center justify-center border border-gray-200 hover:bg-primary hover:text-white hover:border-primary transition duration-200 cursor-pointer ease-in whitespace-nowrap"
+          >
+            <div class="text-sm sm:text-base">O’rtacha narx: 30$-40$</div>
+          </div>
+          <div
+            class="py-3 px-4 flex items-center justify-center border border-gray-200 hover:bg-primary hover:text-white hover:border-primary transition duration-200 cursor-pointer ease-in whitespace-nowrap"
+          >
+            <div class="text-sm sm:text-base">O’rtacha narx: 40$-50$</div>
+          </div>
+          <div
+            class="py-3 px-4 flex items-center justify-center border border-gray-200 hover:bg-primary hover:text-white hover:border-primary transition duration-200 cursor-pointer ease-in whitespace-nowrap"
+          >
+            <div class="text-sm sm:text-base">O’rtacha narx: 50$-60$$</div>
+          </div>
+          <div
+            class="py-3 px-4 flex items-center justify-center border border-gray-200 hover:bg-primary hover:text-white hover:border-primary transition duration-200 cursor-pointer ease-in whitespace-nowrap"
+          >
+            <div class="text-sm sm:text-base">O’rtacha narx: 80$+</div>
+          </div>
+        </div>
+        <div class="w-full grid grid-cols-2 md:grid-cols-5 gap-3 md:gap-5">
+          <img
+            class="w-full h-full object-cover"
+            src="./assets/img/mexmonxonalar/Rectangle 63.png"
+            alt=""
+          />
+          <img
+            class="w-full h-full object-cover"
+            src="./assets/img/mexmonxonalar/Rectangle 64.png"
+            alt=""
+          />
+          <img
+            class="w-full h-full object-cover col-span-2 md:col-span-3 md:row-span-2"
+            src="./assets/img/mexmonxonalar/Rectangle 61.png"
+            alt=""
+          />
+          <img
+            class="w-full h-full object-cover col-span-2"
+            src="./assets/img/mexmonxonalar/Rectangle 62.png"
+            alt=""
+          />
+        </div>
+        <div
+          class="w-full grid sm:grid-cols-2 gap-3 lg:gap-5"
+          id="maqolalar"
+        ></div>
+        <div class="w-full flex items-center justify-center gap-3 font-jost">
+          <div
+            class="h-8 w-8 flex items-center justify-center rounded-md bg-primary"
+          >
+            <div class="text-base text-white">1</div>
+          </div>
+          <div
+            class="h-8 w-8 flex items-center justify-center rounded-md bg-gray-100"
+          >
+            <div class="text-base text-black">2</div>
+          </div>
+          <div
+            class="h-8 w-8 flex items-center justify-center rounded-md bg-gray-100"
+          >
+            <div class="text-base text-black">3</div>
+          </div>
+          <div
+            class="h-8 w-8 flex items-center justify-center rounded-md bg-gray-100"
+          >
+            <div class="text-base text-black">4</div>
+          </div>
+          <div
+            class="h-8 w-8 flex items-center justify-center rounded-md bg-gray-100"
+          >
+            <div class="text-base text-black">5</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========footer============= -->
+    <footer
+      class="flex justify-around items-center h-[130px] bg-[#262A34] px-8 py-6"
+    >
+      <div>
+        <a href="./index.html"><img src="./assets/img/logo.svg" /></a>
+      </div>
+
+      <div class="xs:hidden md:block">
+        <div class="mb-6">
+          <ul>
+            <li class="flex gap-6 text-white">
+              <a href="#">Asosiy</a>
+              <a href="#"> Yetti pir </a>
+              <a href="#">Borish uchun qo’llanma</a>
+              <a href="#">Restoranlar</a>
+              <a href="#">Mehmonxonalar</a>
+              <a href="#">Maqolalar</a>
+              <a href="#">Turist uchun</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="jostFont text-[14px] text-gray-200 text-center">
+          www.bukharatour.com Barcha huquqlar himoyalangan
+        </div>
+      </div>
+
+      <div>
+        <img
+          class="bg-[#00A307] p-[17px] rounded-[50%] cursor-pointer"
+          src="./assets/img/arrowTop.svg"
+        />
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+      let maqolalar = [
+        {
+          img: 1,
+          title: "Saxid zarafshon",
+        },
+        {
+          img: 2,
+          title: "Rizo Boutique",
+        },
+        {
+          img: 3,
+          title: "Labi hovz ",
+        },
+        {
+          img: 4,
+          title: "Okhun XIX century",
+        },
+        {
+          img: 5,
+          title: "Komil Boutique Hotel",
+        },
+        {
+          img: 6,
+          title: " Hotel Malika Bukhara ",
+        },
+
+        {
+          img: 7,
+          title: " Mukhlisabegim Hotel  ",
+        },
+
+        {
+          img: 8,
+          title: " Отель Амулет  ",
+        },
+        {
+          img: 9,
+          title: " Khurjin Hotel Bukhara  ",
+        },
+        {
+          img: 10,
+          title: "Saxid zarafshon ",
+        },
+      ];
+
+      let el = document.getElementById("maqolalar");
+
+      function filterPosts(value) {
+        // your code
+      }
+
+      function generatePaginations() {
+        // your code
+        // loadPosts()
+      }
+
+      function loadPosts() {
+        el.innerHTML = "";
+        maqolalar.forEach((post) => {
+          el.innerHTML += `
+  <div class="relative p-3 sm:p-5 md:p-7 flex flex-col items-start justify-end h-[250px] sm:h-[340px] md:h-[440px]">
+           <img
+                      class="absolute top-0 left-0 w-full h-full object-cover"
+                      src="./assets/img/mexmonxonalar/${post.img}.png"
+                      alt=""
+                    />
+                    <div
+                      class="relative z-10 text-white mt-2 sm:mt-3 flex flex-col items-start gap-1"
+                    >
+                      
+                      <div class="flex items-center justify-start gap-2">
+                        <div class="text-xl font-semibold">${post.title}</div>
+                        <img src="./assets/img/icons/star.svg" alt="" />
+                        <div class="text-lg font-semibold">5</div>
+                      </div>
+                      <div class="flex items-center justify-start gap-2">
+                       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M12 11.75C12.4859 11.75 12.899 11.5798 13.2394 11.2394C13.5798 10.899 13.75 10.4859 13.75 9.99998C13.75 9.51408 13.5798 9.10094 13.2394 8.76058C12.899 8.42019 12.4859 8.25 12 8.25C11.5141 8.25 11.1009 8.42019 10.7606 8.76058C10.4202 9.10094 10.25 9.51408 10.25 9.99998C10.25 10.4859 10.4202 10.899 10.7606 11.2394C11.1009 11.5798 11.5141 11.75 12 11.75ZM12 19.8019C14.059 17.9609 15.6154 16.2042 16.6692 14.5317C17.7231 12.8593 18.25 11.4154 18.25 10.2C18.25 8.30638 17.6468 6.75797 16.4404 5.55477C15.234 4.35156 13.7538 3.74995 12 3.74995C10.2461 3.74995 8.76599 4.35156 7.55957 5.55477C6.35316 6.75797 5.74995 8.30638 5.74995 10.2C5.74995 11.4154 6.27688 12.8593 7.33073 14.5317C8.38458 16.2042 9.94099 17.9609 12 19.8019ZM12 21.4615C11.8795 21.4615 11.7621 21.4413 11.648 21.4009C11.5339 21.3605 11.4301 21.3019 11.3365 21.225C8.95447 19.0814 7.17788 17.092 6.00672 15.2567C4.83557 13.4214 4.25 11.7359 4.25 10.2C4.25 7.77691 5.03012 5.84614 6.59037 4.40768C8.15062 2.96923 9.95382 2.25 12 2.25C14.0461 2.25 15.8493 2.96923 17.4096 4.40768C18.9698 5.84614 19.75 7.77691 19.75 10.2C19.75 11.7359 19.1644 13.4214 17.9932 15.2567C16.8221 17.092 15.0455 19.0814 12.6634 21.225C12.5762 21.3019 12.474 21.3605 12.3567 21.4009C12.2394 21.4413 12.1205 21.4615 12 21.4615Z" fill="#fff"/>
+</svg>
+
+                        <div class="text-base font-jost">
+                       M.Ikbol Street 7 Sahid Zarafshon Hotel
+                        </div>
+                      </div>
+                     
+                    </div>
+          </div>
+            `;
+        });
+      }
+      loadPosts();
+    </script>
+  </body>
+</html>

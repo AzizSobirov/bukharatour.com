@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="./assets/css/app.css" rel="stylesheet" />
-    <title>Main</title>
   </head>
 
   <body>
@@ -15,34 +14,48 @@
           <a href="./index.html"><img src="./assets/img/logo.svg" /></a>
         </div>
 
-        <div>
+        <div class="xs:hidden md:block">
           <ul>
             <li class="flex gap-6">
               <a href="#">Asosiy</a>
-              <a class="flex gap-[15px] relative group" href="#"
-                >Yetti pir <img src="./assets/img//arrowBottom.svg" />
+              <div class="flex gap-[15px] text-white relative group">
+                Yetti pir <img src="./assets/img/arrowBottom.svg" />
                 <div
                   class="absolute top-[24px] w-[368px] bg-white z-10 text-black rounded-[12px] p-6 hidden group-hover:block dropdown-menu"
                 >
-                  <div class="pb-4">Аbduxoliq G’ijduvoniy quddisu sirrihu.</div>
+                  <div class="pb-4">
+                    <a href="./1pir.html"
+                      >Аbduxoliq G’ijduvoniy quddisu sirrihu.</a
+                    >
+                  </div>
                   <div class="border-y-[1px] py-4">
-                    Xoʻja Muhammad Orif ar-Revgariy.
+                    <a href="./2pir.html"> Xoʻja Muhammad Orif ar-Revgariy. </a>
                   </div>
                   <div class="py-4">
-                    Xoʻja Maxmud Anjir Fagʻnaviy maqbarasi.
+                    <a href="./3pir.html">
+                      Xoʻja Maxmud Anjir Fagʻnaviy maqbarasi.
+                    </a>
                   </div>
                   <div class="border-y-[1px] py-4">
-                    Xoʻja Ali Romitaniyning yodgorlik majmui.
+                    <a href="./4pir.html">
+                      Xoʻja Ali Romitaniyning yodgorlik majmui.
+                    </a>
                   </div>
                   <div class="py-4">
-                    Xoja Muhammad Bobo Samosiy yodgorlik majmui.
+                    <a href="./5pir.html">
+                      Xoja Muhammad Bobo Samosiy yodgorlik majmui.
+                    </a>
                   </div>
                   <div class="border-y-[1px] py-4">
-                    Xoʻja Sayid Amir Kulol Buxoriy yodgorlik majmuasi.
+                    <a href="./6pir.html">
+                      Xoʻja Sayid Amir Kulol Buxoriy yodgorlik majmuasi.
+                    </a>
                   </div>
-                  <div class="pt-4">Bahouddin Naqshband.</div>
+                  <div class="pt-4">
+                    <a href="./7pir.html">Bahouddin Naqshband.</a>
+                  </div>
                 </div>
-              </a>
+              </div>
               <a href="#">Borish uchun qo’llanma</a>
               <a href="#">Restoranlar</a>
               <a href="#">Mehmonxonalar</a>
@@ -64,17 +77,19 @@
       </header>
 
       <div>
-        <div class="grid grid-cols-2 pb-[100px] container">
+        <div class="grid grid-cols-1 pb-[100px] container">
           <div class="mt-[40px]">
-            <div class="fw-6 text-[60px] w-[506px] text-white loraFont">
+            <div
+              class="fw-6 md:text-[60px] xs:text-[30px] md:w-[506px] xs:w-[282px] xs:text-center md:text-start text-white loraFont"
+            >
               Go’zal buxoroning sirli chiroyi
             </div>
             <div
-              class="fw-5 text-[24px] w-[459px] text-white loraFont my-[24px]"
+              class="fw-5 md:text-[24px] xs:text-[18px] md:w-[459px] xs:w-[298px] xs:text-center md:text-start text-white loraFont my-[24px]"
             >
               Buxorodagi Naqshbandiya tariqati vataniga tashrif buyuring!
             </div>
-            <div>
+            <div class="xs:text-center md:text-start">
               <button
                 class="bg-[#00B907] fw-6 text-[18px] py-[11px] px-[50px] rounded-[3px] text-white jostFont"
               >
@@ -83,12 +98,16 @@
             </div>
           </div>
 
-          <div class="flex flex-col justify-end items-end -mb-[50px]">
-            <div class="mb-[10px]"><img src="./assets/img/Next.png" /></div>
+          <div class="flex flex-col justify-end items-end">
+            <div class="mb-[10px] xs:hidden md:block">
+              <img src="./assets/img/Next.png" />
+            </div>
 
-            <div class="jostFont text-white mb-[13px]">O’zbek taomlari</div>
+            <div class="jostFont text-white mb-[13px] xs:hidden md:block">
+              O’zbek taomlari
+            </div>
 
-            <div class="flex">
+            <div class="flex xs:my-5 md:my-0">
               <div class="cursor-pointer mr-[8px]">
                 <img src="./assets/img/arrowLeftB.png" />
               </div>
@@ -104,16 +123,20 @@
     <!-- =========section=========== -->
     <main class="container">
       <section class="my-[86px]">
-        <div class="grid grid-cols-2 gap-5">
+        <div class="grid md:grid-cols-2 xs:grid-cols-1 gap-5">
           <div class="rounded-[3px] shadow bg-white p-[50px]">
             <div class="flex">
-              <div class="mr-2 fw-5 text-[30px]">Qadimiy</div>
-              <div class="fw-6 text-[#00A307] text-[30px]">Buxoro</div>
+              <div class="mr-2 fw-5 xs:text-[16px] md:text-[30px]">Qadimiy</div>
+              <div class="fw-6 text-[#00A307] xs:text-[16px] md:text-[30px]">
+                Buxoro
+              </div>
             </div>
-            <div class="text-[60px] mb loraFont">
+            <div class="md:text-[60px] xs:text-[24px] mb-3 loraFont">
               Sexrini, o‘zingiz uchun kashf eting!
             </div>
-            <div class="fw-4 text-[20px] text-[#616266] mb-[40px]">
+            <div
+              class="fw-4 mb:text-[20px] xs:text-[18px] text-[#616266] mb-[40px]"
+            >
               Buxoro shahri Markaziy Osiyoda joylashgan tarixiy madaniyat
               Markazi. Qadimdan Buyuk ipak yo’lida joylashgan Buxoro, Islom
               tsivilizatsiyasiga katta xissa qo’shgan olimlarni etishtirib
@@ -133,16 +156,24 @@
 
       <section class="mb-[80px]">
         <div class="flex mb-3 loraFont">
-          <div class="mr-2 fw-5 text-[30px]">Afsonaviy buxoroning</div>
-          <div class="fw-6 text-[#00A307] text-[30px]">go’zal manzalari</div>
+          <div class="mr-2 fw-5 xs:text-[16px] md:text-[30px]">
+            Afsonaviy buxoroning
+          </div>
+          <div class="fw-6 text-[#00A307] xs:text-[16px] md:text-[30px]">
+            go’zal manzalari
+          </div>
         </div>
 
-        <div class="loraFont text-[60px]">Buxoro manzaralari</div>
-        <div class="grid grid-cols-2 gap-5 relative">
+        <div class="loraFont xs:text-[24px] md:text-[60px]">
+          Buxoro manzaralari
+        </div>
+        <div class="grid xs:grid-cols-1 md:grid-cols-2 gap-5 relative">
           <div>
             <div class="mb-5">
               <img src="./assets/img/Rectangle 54.png" />
-              <div class="absolute left-[0px] top-[35%] -ml-6">
+              <div
+                class="absolute xs:right-14 md:left-[0px] xs:-bottom-10 md:top-[35%] -ml-6"
+              >
                 <img
                   class="bg-[#00A307] p-[17px] rounded-[50%] cursor-pointer"
                   src="./assets/img/arrowLeft.svg"
@@ -153,16 +184,23 @@
           </div>
 
           <div>
-            <img src="./assets/img/Rectangle 55.png" />
-            <div class="absolute right-[0px] top-[35%] -mr-6">
+            <img
+              class="xs:hidden md:block"
+              src="./assets/img/Rectangle 55.png"
+            />
+            <div
+              class="absolute xs:-bottom-10 xs:right-6 md:right-[0px] md:top-[35%] -mr-6"
+            >
               <img
                 class="bg-[#00A307] p-[17px] rounded-[50%] cursor-pointer"
                 src="./assets/img/arrowRight.svg"
               />
             </div>
-            <div class="jostFont mt-5">Ismoil Samosiy Maqbarasi</div>
+            <div class="jostFont mt-5 xs:hidden md:block">
+              Ismoil Samosiy Maqbarasi
+            </div>
             <button
-              class="absolute right-0 bottom-0 bg-[#00B907] fw-6 text-[18px] py-[11px] px-[50px] rounded-[3px] text-white jostFont"
+              class="absolute xs:left-0 md:left-[1000px] md:right-0 xs:-bottom-10 md:bottom-0 bg-[#00B907] fw-6 text-[18px] py-[11px] px-[50px] rounded-[3px] text-white jostFont"
             >
               Barchasi
             </button>
@@ -171,16 +209,532 @@
       </section>
 
       <section>
-        <div class="flex loraFont mb-[40px]">
-          <div class="mr-2 fw-5 text-[30px]">Buxoro sexrini</div>
-          <div class="fw-6 text-[#00A307] text-[30px]">videolarda ko’ring!</div>
+        <div class="md:flex loraFont mb-[40px]">
+          <div class="mr-2 fw-5 xs:text-[24px] md:text-[30px]">
+            Buxoro sexrini
+          </div>
+          <div class="fw-6 text-[#00A307] xs:text-[24px] md:text-[30px]">
+            videolarda ko’ring!
+          </div>
+        </div>
+
+        <div class="relative">
+          <img src="./assets/img/Rectangle 100.png" />
+          <div
+            class="absolute xs:left-[40%] md:left-[0px] md:top-[50%] xs:top-[270px] -ml-6"
+          >
+            <img
+              class="bg-[#00A307] p-[17px] rounded-[50%] cursor-pointer"
+              src="./assets/img/arrowLeft.svg"
+            />
+          </div>
+          <div class="absolute md:top-[50%] md:left-[50%]">
+            <img
+              class="bg-[#ffffff66] p-[34px] rounded-[50%] cursor-pointer"
+              src="./assets/img/play.png"
+            />
+          </div>
+          <div
+            class="absolute xs:right-[40%] md:right-[0px] xs:top-[270px] md:top-[50%] -mr-6"
+          >
+            <img
+              class="bg-[#00A307] p-[17px] rounded-[50%] cursor-pointer"
+              src="./assets/img/arrowRight.svg"
+            />
+          </div>
+          <div class="jostFont text-[#616266] mt-[18px]">
+            Ushbu videoda buxoroning chiroyli manzaralari aks etilgan
+          </div>
+        </div>
+      </section>
+
+      <section class="mb-[160px]">
+        <div
+          class="grid xs:grid-cols-1 md:grid-cols-2 gap-5 jostFont mt-[160px]"
+        >
+          <div>
+            <div class="flex jostFont">
+              <div class="mr-2 fw-5 xs:text-[16px] md:text-[30px]">
+                Yetti pir
+              </div>
+              <div class="fw-6 text-[#00A307] xs:text-[16px] md:text-[30px]">
+                haqida
+              </div>
+            </div>
+            <div class="loraFont xs:text-[24px] md:text-[60px] mb-[40px]">
+              Afsonaviy yetti pir
+            </div>
+
+            <div><img src="./assets/img/Rectangle 4.png" /></div>
+          </div>
+
+          <div>
+            <div class="jostFont fw-4 xs:text-[16px] md:text-[20px] mb-[159px]">
+              Buxorodagi tasavvuf ilmiga katta xissa qoʻshgan, 7 buyuk soʻfiylar
+              dafn etilgan joy va atrofiga qurilgan maqbara va masjidlar
+              majmuidir.
+            </div>
+
+            <div class="shadow px-[50px] py-[86px]">
+              <div class="xs:text-[20px] md:text-[38px] fw-7 loraFont mb-6">
+                1-Xoʻja Abduxoliq Gʻijduvoniy
+              </div>
+              <div class="text-[#616266] text-[18px] mb-[40px]">
+                Qadimgi buxoroning 1-piri Xo’ja Abduxoliq G’ijduvoniy maqbarasi
+                haqida ma’lumotlar
+              </div>
+              <div class="flex justify-between">
+                <div>
+                  <button
+                    class="bg-[#00B907] fw-6 text-[18px] py-[11px] px-[50px] rounded-[3px] text-white jostFont"
+                  >
+                    Batafsil
+                  </button>
+                </div>
+                <div class="flex items-center gap-4">
+                  <div>
+                    <img
+                      class="bg-[#00A307] p-[17px] rounded-[50%] cursor-pointer"
+                      src="./assets/img/arrowLeft.svg"
+                    />
+                  </div>
+                  <div>
+                    <img
+                      class="bg-[#00A307] p-[17px] rounded-[50%] cursor-pointer"
+                      src="./assets/img/arrowRight.svg"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="mb-[80px]">
+        <div class="grid xs:grid-cols-1 md:grid-cols-2 gap-[126px]">
+          <div>
+            <div class="md:flex loraFont mb-[40px]">
+              <div class="mr-2 fw-5 xs:text-[16px] md:text-[30px]">
+                Borish uchun
+              </div>
+              <div class="fw-6 text-[#00A307] xs:text-[16px] md:text-[30px]">
+                qo’llanma
+              </div>
+            </div>
+            <div class="loraFont xs:text-[24px] md:text-[60px] mb-[40px]">
+              Toshkent - Bukhro yo’nalishidagi transportlar
+            </div>
+            <div>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2997.341485660139!2d69.24052400712175!3d41.30143423308705!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8b83cfb51c8f%3A0xe8bb389a4b49a823!2sBuxoro!5e0!3m2!1sen!2s!4v1685780395931!5m2!1sen!2s"
+                md:width="630"
+                xs:width="352"
+                md:height="614"
+                xs:height="302"
+                style="border: 0;"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+
+          <div class="relative">
+            <div class="md:flex items-center mb-[22px]">
+              <div class="mr-4">
+                <img src="./assets/img/🦆 emoji _bus_.png" />
+              </div>
+              <div class="fw-6 text-[24px]">Avtobus</div>
+            </div>
+            <div class="jostFont fw-4 mb-[24px]">
+              Avtobus uchun biletlarni, o’zingiz toshkent janubiy vokzalidan
+              yoki Lorem ipsum.uz saytidan sotib olishingiz mumkin!
+            </div>
+            <div class="grid grid-cols-2 mb-[64px]">
+              <div>
+                <div class="fw-4 xs:text-[16px] md:text-[18px] text-[#616266]">
+                  Tahminiy narxlar
+                </div>
+                <div
+                  class="fw-4 xs:text-[16px] md:text-[18px] text-[#616266] my-[28px]"
+                >
+                  Yo’l vaqti
+                </div>
+                <div class="fw-4 xs:text-[16px] md:text-[18px] text-[#616266]">
+                  Masofasi
+                </div>
+              </div>
+              <div>
+                <div
+                  class="xs:text-[16px] md:text-[18px] text-[#008D06] jostFont"
+                >
+                  150 000 - 200 000 UZS
+                </div>
+                <div
+                  class="xs:text-[16px] md:text-[18px] text-[#616266] jostFont my-[28px]"
+                >
+                  6 soat 45 daqida
+                </div>
+                <div
+                  class="xs:text-[16px] md:text-[18px] text-[#616266] jostFont"
+                >
+                  405 km
+                </div>
+              </div>
+            </div>
+
+            <div class="flex items-center mb-[22px]">
+              <div class="mr-4">
+                <img src="./assets/img/🦆 emoji _airplane_.png" />
+              </div>
+              <div class="fw-6 text-[24px]">Samolyot</div>
+            </div>
+            <div class="jostFont fw-4 mb-[24px]">
+              Avtobus uchun biletlarni, o’zingiz toshkent janubiy vokzalidan
+              yoki Lorem ipsum.uz saytidan sotib olishingiz mumkin!
+            </div>
+            <div class="grid grid-cols-2 mb-[64px]">
+              <div>
+                <div class="fw-4 xs:text-[16px] md:text-[18px] text-[#616266]">
+                  Tahminiy narxlar
+                </div>
+                <div
+                  class="fw-4 xs:text-[16px] md:text-[18px] text-[#616266] my-[28px]"
+                >
+                  Yo’l vaqti
+                </div>
+                <div class="fw-4 xs:text-[16px] md:text-[18px] text-[#616266]">
+                  Masofasi
+                </div>
+              </div>
+              <div>
+                <div
+                  class="xs:text-[16px] md:text-[18px] text-[#008D06] jostFont"
+                >
+                  150 000 - 200 000 UZS
+                </div>
+                <div
+                  class="xs:text-[16px] md:text-[18px] text-[#616266] jostFont my-[28px]"
+                >
+                  6 soat 45 daqida
+                </div>
+                <div class="text-[18px] text-[#616266] jostFont">405 km</div>
+              </div>
+            </div>
+
+            <div class="flex items-center mb-[22px]">
+              <div class="mr-4">
+                <img src="./assets/img/🦆 emoji _railway car_.png" />
+              </div>
+              <div class="fw-6 text-[24px]">Poezd</div>
+            </div>
+            <div class="jostFont fw-4 mb-[24px]">
+              Avtobus uchun biletlarni, o’zingiz toshkent janubiy vokzalidan
+              yoki Lorem ipsum.uz saytidan sotib olishingiz mumkin!
+            </div>
+            <div class="grid grid-cols-2 mb-[30px]">
+              <div>
+                <div class="fw-4 xs:text-[16px] md:text-[18px] text-[#616266]">
+                  Tahminiy narxlar
+                </div>
+                <div
+                  class="fw-4 xs:text-[16px] md:text-[18px] text-[#616266] my-[28px]"
+                >
+                  Yo’l vaqti
+                </div>
+                <div class="fw-4 xs:text-[16px] md:text-[18px] text-[#616266]">
+                  Masofasi
+                </div>
+              </div>
+              <div>
+                <div
+                  class="xs:text-[16px] md:text-[18px] text-[#008D06] jostFont"
+                >
+                  150 000 - 200 000 UZS
+                </div>
+                <div
+                  class="xs:text-[16px] md:text-[18px] text-[#616266] jostFont my-[28px]"
+                >
+                  6 soat 45 daqida
+                </div>
+                <div
+                  class="xs:text-[16px] md:text-[18px] text-[#616266] jostFont"
+                >
+                  405 km
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <button
+                class="absolute right-0 bg-[#00B907] fw-6 text-[18px] py-[11px] px-[50px] rounded-[3px] text-white jostFont"
+              >
+                Batafsil tanishish
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="mb-[80px]">
+        <div class="fw-6 text-[#00A307] xs:text-[16px] md:text-[30px] loraFont">
+          Restoranlar
+        </div>
+        <div class="loraFont xs:text-[24px] md:text-[60px] mb-[40px]">
+          Buxorodagi restoranlar ro’yxati
+        </div>
+        <div class="grid xs:grid-cols-1 md:grid-cols-3 gap-5 relative">
+          <div>
+            <img src="./assets/img/Rectangle 18.png" />
+            <div class="mt-2 sm:mt-5 flex flex-col items-start gap-1 sm:gap-2">
+              <div class="text-base font-jost text-gray-400">
+                Yevropa taomlari
+              </div>
+              <div class="flex items-center justify-start gap-2">
+                <div class="text-xl font-semibold">Garten Bukhara</div>
+                <div class="text-lg font-semibold">5</div>
+              </div>
+              <div class="flex items-center justify-start gap-2">
+                <img src="./assets/img/icons/location.svg" alt="" />
+                <div class="text-base font-jost text-gray-400">
+                  M.Ikbol Street 7 Sahid Zarafshon Hotel
+                </div>
+              </div>
+              <div class="text-base font-jost text-primary">
+                O’rtacha check: 500 000 UZS
+              </div>
+            </div>
+          </div>
+          <div class="xs:hidden md:block">
+            <img src="./assets/img/Rectangle 19.png" />
+            <div class="mt-2 sm:mt-5 flex flex-col items-start gap-1 sm:gap-2">
+              <div class="text-base font-jost text-gray-400">
+                Yevropa taomlari
+              </div>
+              <div class="flex items-center justify-start gap-2">
+                <div class="text-xl font-semibold">Old Bukhara</div>
+                <div class="text-lg font-semibold">5</div>
+              </div>
+              <div class="flex items-center justify-start gap-2">
+                <img src="./assets/img/icons/location.svg" alt="" />
+                <div class="text-base font-jost text-gray-400">
+                  M.Ikbol Street 7 Sahid Zarafshon Hotel
+                </div>
+              </div>
+              <div class="text-base font-jost text-primary">
+                O’rtacha check: 500 000 UZS
+              </div>
+            </div>
+          </div>
+          <div class="xs:hidden md:block">
+            <img src="./assets/img/Rectangle 19 (1).png" />
+            <div
+              class="mt-2 mb-[100px] sm:mt-5 flex flex-col items-start gap-1 sm:gap-2"
+            >
+              <div class="text-base font-jost text-gray-400">
+                Yevropa taomlari
+              </div>
+              <div class="flex items-center justify-start gap-2">
+                <div class="text-xl font-semibold">Xon atlas</div>
+                <div class="text-lg font-semibold">5</div>
+              </div>
+              <div class="flex items-center justify-start gap-2">
+                <img src="./assets/img/icons/location.svg" alt="" />
+                <div class="text-base font-jost text-gray-400">
+                  M.Ikbol Street 7 Sahid Zarafshon Hotel
+                </div>
+              </div>
+              <div class="text-base font-jost text-primary">
+                O’rtacha check: 500 000 UZS
+              </div>
+            </div>
+            <div>
+              <button
+                class="absolute right-0 bg-[#00B907] fw-6 text-[18px] py-[11px] px-[50px] rounded-[3px] text-white jostFont"
+              >
+                Barchasi
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="mb-[80px]">
+        <div class="fw-6 text-[#00A307] xs:text-[16px] md:text-[30px] loraFont">
+          Mexmonxonalar
+        </div>
+        <div class="loraFont xs:text-[24px] md:text-[60px] mb-[40px]">
+          Buxoroni xar - xil turdagi mexmonxonalari
+        </div>
+        <div class="grid xs:grid-cols-1 md:grid-cols-2 gap-5 mb-[30px]">
+          <div class="bg1">
+            <div class="mt-[600px] ml-[30px] mb-6">
+              <div
+                class="mt-2 sm:mt-5 flex flex-col items-start gap-1 sm:gap-2"
+              >
+                <div class="flex items-center justify-start gap-2">
+                  <div class="text-xl font-semibold text-white">
+                    Saxid zarafshon
+                  </div>
+                  <img src="./assets/img/icons/star.svg" />
+                  <div class="text-lg font-semibold text-white">5</div>
+                </div>
+                <div class="flex items-center justify-start gap-2">
+                  <img src="./assets/img/icons/location.svg" />
+                  <div class="text-base font-jost text-white">
+                    M.Ikbol Street 7 Sahid Zarafshon Hotel
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col">
+            <div class="bg2 mb-5">
+              <div class="mt-[250px] ml-[30px] mb-6">
+                <div
+                  class="mt-2 sm:mt-5 flex flex-col items-start gap-1 sm:gap-2"
+                >
+                  <div class="flex items-center justify-start gap-2">
+                    <div class="text-xl font-semibold text-white">
+                      Saxid zarafshon
+                    </div>
+                    <img src="./assets/img/icons/star.svg" />
+                    <div class="text-lg font-semibold text-white">5</div>
+                  </div>
+                  <div class="flex items-center justify-start gap-2">
+                    <img src="./assets/img/icons/location.svg" />
+                    <div class="text-base font-jost text-white">
+                      M.Ikbol Street 7 Sahid Zarafshon Hotel
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="bg3">
+              <div class="mt-[250px] ml-[30px] mb-6">
+                <div
+                  class="mt-2 sm:mt-5 flex flex-col items-start gap-1 sm:gap-2"
+                >
+                  <div class="flex items-center justify-start gap-2">
+                    <div class="text-xl font-semibold text-white">
+                      Saxid zarafshon
+                    </div>
+                    <img src="./assets/img/icons/star.svg" />
+                    <div class="text-lg font-semibold text-white">5</div>
+                  </div>
+                  <div class="flex items-center justify-start gap-2">
+                    <img src="./assets/img/icons/location.svg" />
+                    <div class="text-base font-jost text-white">
+                      M.Ikbol Street 7 Sahid Zarafshon Hotel
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex justify-end">
+          <button
+            class="bg-[#00B907] fw-6 text-[18px] py-[11px] px-[50px] rounded-[3px] text-white jostFont"
+          >
+            Barchasi
+          </button>
+        </div>
+      </section>
+
+      <section class="mb-[80px]">
+        <div class="loraFont xs:text-[24px] md:text-[60px] mb-[40px]">
+          Maqolalar
+        </div>
+        <div class="grid xs:grid-cols-1 md:grid-cols-4 gap-5 mb-[30px]">
+          <div>
+            <img src="./assets/img/Rectangle 53.png" />
+            <div class="font-semibold text-[20px] loraFont">
+              Аbduxoliq G’ijduvoniy quddisu sirrihu.
+            </div>
+            <div class="jostFont">
+              Islom olamida Xojagon-naqshbandiya, yassaviya, qubraviya
+              tariqatlari O’rta Osiyoda
+            </div>
+          </div>
+          <div class="xs:hidden md:block">
+            <img src="./assets/img/Rectangle 53 (1).png" />
+            <div class="font-semibold text-[20px] loraFont">
+              Аbduxoliq G’ijduvoniy quddisu sirrihu.
+            </div>
+            <div class="jostFont">
+              Islom olamida Xojagon-naqshbandiya, yassaviya, qubraviya
+              tariqatlari O’rta Osiyoda
+            </div>
+          </div>
+          <div class="xs:hidden md:block">
+            <img src="./assets/img/Rectangle 53 (2).png" />
+            <div class="font-semibold text-[20px] loraFont">
+              Аbduxoliq G’ijduvoniy quddisu sirrihu.
+            </div>
+            <div class="jostFont">
+              Islom olamida Xojagon-naqshbandiya, yassaviya, qubraviya
+              tariqatlari O’rta Osiyoda
+            </div>
+          </div>
+          <div class="xs:hidden md:block">
+            <img src="./assets/img/Rectangle 53 (3).png" />
+            <div class="font-semibold text-[20px] loraFont">
+              Аbduxoliq G’ijduvoniy quddisu sirrihu.
+            </div>
+            <div class="jostFont">
+              Islom olamida Xojagon-naqshbandiya, yassaviya, qubraviya
+              tariqatlari O’rta Osiyoda
+            </div>
+          </div>
+        </div>
+        <div class="flex justify-end">
+          <button
+            class="bg-[#00B907] fw-6 text-[18px] py-[11px] px-[50px] rounded-[3px] text-white jostFont"
+          >
+            Barchasi
+          </button>
         </div>
       </section>
     </main>
 
     <!-- ==========footer============= -->
 
-    <footer class="bg-green-500">footer</footer>
+    <footer
+      class="flex justify-around items-center h-[130px] bg-[#262A34] px-8 py-6"
+    >
+      <div>
+        <a href="./index.html"><img src="./assets/img/logo.svg" /></a>
+      </div>
+
+      <div class="xs:hidden md:block">
+        <div class="mb-6">
+          <ul>
+            <li class="flex gap-6">
+              <a href="#">Asosiy</a>
+              <a href="#"> Yetti pir </a>
+              <a href="#">Borish uchun qo’llanma</a>
+              <a href="#">Restoranlar</a>
+              <a href="#">Mehmonxonalar</a>
+              <a href="#">Maqolalar</a>
+              <a href="#">Turist uchun</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="jostFont text-[14px] text-gray-200 text-center">
+          www.bukharatour.com Barcha huquqlar himoyalangan
+        </div>
+      </div>
+
+      <div>
+        <img
+          class="bg-[#00A307] p-[17px] rounded-[50%] cursor-pointer"
+          src="./assets/img/arrowTop.svg"
+        />
+      </div>
+    </footer>
   </body>
 </html>
 
@@ -188,12 +742,12 @@
   /* =========font family============== */
   @import url("https://fonts.googleapis.com/css2?family=Jost&family=Lora:wght@500&family=Nunito&display=swap");
 
-  /* body {
+  body {
     display: flex;
     flex-direction: column;
     margin: 0;
     height: 100vh;
-  } */
+  }
 
   .layout {
     background-image: url(./assets/img/bg.png);
@@ -201,10 +755,9 @@
     background-size: cover;
   }
 
-  /* 
   main {
     flex-grow: 1;
-  } */
+  }
 
   .container {
     width: 100%;
@@ -224,24 +777,17 @@
     font-family: "Jost", sans-serif;
   }
 
-  .next {
-    justify-content: end;
-    align-items: center;
-  }
-
-  .mainTitle {
-    margin-top: 30px;
-  }
-
   .shadow {
     box-shadow: 0px 0px 18px rgba(0, 0, 0, 0.1);
   }
 
-  .mt {
-    margin: 110px 0;
+  .bg1 {
+    background-image: url(./assets/img/Rectangle\ 20.png);
   }
-
-  .p8 {
-    padding: 50px;
+  .bg2 {
+    background-image: url(./assets/img/Rectangle\ 21.png);
+  }
+  .bg3 {
+    background-image: url(./assets/img/Rectangle\ 22.png);
   }
 </style>

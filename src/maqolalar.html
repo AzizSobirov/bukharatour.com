@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./assets/css/app.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <title>Maqolalar to’plami</title>
+  </head>
+
+  <body>
+    <!-- ============header============= -->
+    <header class="flex justify-around items-center h-[80px]">
+      <div>
+        <a href="./index.html"><img src="./assets/img/logo-dark.svg" /></a>
+      </div>
+
+      <div class="xs:hidden md:block">
+        <ul>
+          <li class="flex gap-6">
+            <a href="#">Asosiy</a>
+            <div class="flex gap-[15px] relative group">
+              Yetti pir
+              <svg
+                width="10"
+                height="7"
+                viewBox="0 0 10 7"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M0.469667 0.969703C0.762557 0.676803 1.23744 0.676803 1.53033 0.969703L5 4.4393L8.4697 0.969702C8.7626 0.676802 9.2374 0.676802 9.5303 0.969702C9.8232 1.2626 9.8232 1.7374 9.5303 2.0303L5.5303 6.03033C5.2374 6.32322 4.7626 6.32322 4.4697 6.03033L0.469667 2.0303C0.176777 1.7374 0.176777 1.2626 0.469667 0.969703Z"
+                  fill="#000"
+                />
+              </svg>
+
+              <div
+                class="absolute top-[24px] w-[368px] bg-white z-10 text-black rounded-[12px] p-6 hidden group-hover:block dropdown-menu"
+              >
+                <div class="pb-4">
+                  <a href="./1pir.html"
+                    >Аbduxoliq G’ijduvoniy quddisu sirrihu.</a
+                  >
+                </div>
+                <div class="border-y-[1px] py-4">
+                  <a href="./2pir.html"> Xoʻja Muhammad Orif ar-Revgariy. </a>
+                </div>
+                <div class="py-4">
+                  <a href="./3pir.html">
+                    Xoʻja Maxmud Anjir Fagʻnaviy maqbarasi.
+                  </a>
+                </div>
+                <div class="border-y-[1px] py-4">
+                  <a href="./4pir.html">
+                    Xoʻja Ali Romitaniyning yodgorlik majmui.
+                  </a>
+                </div>
+                <div class="py-4">
+                  <a href="./5pir.html">
+                    Xoja Muhammad Bobo Samosiy yodgorlik majmui.
+                  </a>
+                </div>
+                <div class="border-y-[1px] py-4">
+                  <a href="./6pir.html">
+                    Xoʻja Sayid Amir Kulol Buxoriy yodgorlik majmuasi.
+                  </a>
+                </div>
+                <div class="pt-4">
+                  <a href="./7pir.html">Bahouddin Naqshband.</a>
+                </div>
+              </div>
+            </div>
+            <a href="#">Borish uchun qo’llanma</a>
+            <a href="#">Restoranlar</a>
+            <a href="#">Mehmonxonalar</a>
+            <a href="#">Maqolalar</a>
+            <a href="#">Turist uchun</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="flex items-center gap-[13px]">
+        <div class="cursor-pointer">
+          <img src="./assets/img/language.svg" />
+        </div>
+        <div class="">UZ</div>
+        <div class="cursor-pointer">
+          <img src="./assets/img/arrowBottom.svg" />
+        </div>
+      </div>
+    </header>
+
+    <!-- Top -->
+    <section class="my-6 md:my-[70px] font-lora">
+      <div class="container flex flex-col items-start gap-5 md:gap-12">
+        <div
+          class="w-full flex flex-col sm:flex-row items-center justify-between"
+        >
+          <div class="text-2xl md:text-4xl lg:text-7xl font-lora font-semibold">
+            Maqolalar to’plami
+          </div>
+          <label
+            for=""
+            class="mt-3 sm:mt-0 px-4 py-3 w-full max-w-[380px] md:w-[280px] lg:w-[380px] bg-gray-100 rounded-xl flex items-center justify-start"
+          >
+            <img src="./assets/img/icons/search.svg" alt="" />
+            <input
+              class="text-gray-400 ml-2 w-full font-jost"
+              type="search"
+              placeholder="Maqola nomini kiriting"
+              oninput="filterPosts(this.value)"
+            />
+          </label>
+        </div>
+        <div
+          class="grid md:grid-cols-3 lg:grid-cols-4 gap-3 lg:gap-5"
+          id="maqolalar"
+        ></div>
+        <div class="w-full flex items-center justify-center gap-3 font-jost">
+          <div
+            class="h-8 w-8 flex items-center justify-center rounded-md bg-primary"
+          >
+            <div class="text-base text-white">1</div>
+          </div>
+          <div
+            class="h-8 w-8 flex items-center justify-center rounded-md bg-gray-100"
+          >
+            <div class="text-base text-black">2</div>
+          </div>
+          <div
+            class="h-8 w-8 flex items-center justify-center rounded-md bg-gray-100"
+          >
+            <div class="text-base text-black">3</div>
+          </div>
+          <div
+            class="h-8 w-8 flex items-center justify-center rounded-md bg-gray-100"
+          >
+            <div class="text-base text-black">4</div>
+          </div>
+          <div
+            class="h-8 w-8 flex items-center justify-center rounded-md bg-gray-100"
+          >
+            <div class="text-base text-black">5</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========footer============= -->
+    <footer
+      class="flex justify-around items-center h-[130px] bg-[#262A34] px-8 py-6"
+    >
+      <div>
+        <a href="./index.html"><img src="./assets/img/logo.svg" /></a>
+      </div>
+
+      <div class="xs:hidden md:block ">
+        <div class="mb-6">
+          <ul>
+            <li class="flex gap-6 text-white">
+              <a href="#">Asosiy</a>
+              <a href="#"> Yetti pir </a>
+              <a href="#">Borish uchun qo’llanma</a>
+              <a href="#">Restoranlar</a>
+              <a href="#">Mehmonxonalar</a>
+              <a href="#">Maqolalar</a>
+              <a href="#">Turist uchun</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="jostFont text-[14px] text-gray-200 text-center">
+          www.bukharatour.com Barcha huquqlar himoyalangan
+        </div>
+      </div>
+
+      <div>
+        <img
+          class="bg-[#00A307] p-[17px] rounded-[50%] cursor-pointer"
+          src="./assets/img/arrowTop.svg"
+        />
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+      let maqolalar = [
+        {
+          id: 1,
+          title: "Аbduxoliq G’ijduvoniy quddisu sirrihu.",
+          desc:
+            "Islom olamida Xojagon-naqshbandiya, yassaviya, qubraviya tariqatlari O’rta Osiyoda",
+        },
+        {
+          id: 2,
+          title: "Аbduxoliq G’ijduvoniy quddisu sirrihu.",
+          desc:
+            "Islom olamida Xojagon-naqshbandiya, yassaviya, qubraviya tariqatlari O’rta Osiyoda",
+        },
+        {
+          id: 3,
+          title: "Аbduxoliq G’ijduvoniy quddisu sirrihu.",
+          desc:
+            "Islom olamida Xojagon-naqshbandiya, yassaviya, qubraviya tariqatlari O’rta Osiyoda",
+        },
+        {
+          id: 4,
+          title: "Аbduxoliq G’ijduvoniy quddisu sirrihu.",
+          desc:
+            "Islom olamida Xojagon-naqshbandiya, yassaviya, qubraviya tariqatlari O’rta Osiyoda",
+        },
+        {
+          id: 1,
+          title: "Аbduxoliq G’ijduvoniy quddisu sirrihu.",
+          desc:
+            "Islom olamida Xojagon-naqshbandiya, yassaviya, qubraviya tariqatlari O’rta Osiyoda",
+        },
+        {
+          id: 2,
+          title: "Аbduxoliq G’ijduvoniy quddisu sirrihu.",
+          desc:
+            "Islom olamida Xojagon-naqshbandiya, yassaviya, qubraviya tariqatlari O’rta Osiyoda",
+        },
+        {
+          id: 3,
+          title: "Аbduxoliq G’ijduvoniy quddisu sirrihu.",
+          desc:
+            "Islom olamida Xojagon-naqshbandiya, yassaviya, qubraviya tariqatlari O’rta Osiyoda",
+        },
+        {
+          id: 4,
+          title: "Аbduxoliq G’ijduvoniy quddisu sirrihu.",
+          desc:
+            "Islom olamida Xojagon-naqshbandiya, yassaviya, qubraviya tariqatlari O’rta Osiyoda",
+        },
+      ];
+
+      let el = document.getElementById("maqolalar");
+
+      function filterPosts(value) {
+        // your code
+      }
+
+      function generatePaginations() {
+        // your code
+        // loadPosts()
+      }
+
+      function loadPosts() {
+        el.innerHTML = "";
+        maqolalar.forEach((post) => {
+          el.innerHTML += `
+  <div class="flex flex-col gap-3">
+            <img
+              class="w-full mb-2 object-cover"
+              src="./assets/img/maqolalar/${post.id}.png"
+              alt=""
+            />
+            <div class="text-base md:text-xl font-semibold font-lora">
+             ${post.title}
+            </div>
+            <div class="text-sm md:text-base text-gray-400 font-jost">
+                 ${post.desc}
+            </div>
+          </div>
+            `;
+        });
+      }
+      loadPosts();
+    </script>
+  </body>
+</html>

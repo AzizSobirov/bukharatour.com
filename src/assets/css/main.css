@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Jost&family=Lora:wght@500&family=Nunito&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jost&family=Inter&family=Lora:wght@500&family=Nunito&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -14,6 +14,10 @@ body {
 
 .font-lora {
   font-family: "Lora", serif;
+}
+
+.font-inter {
+  font-family: "Inter", serif;
 }
 
 .font-jost {
@@ -55,4 +59,10 @@ body {
 .aside-link:hover svg path,
 .aside-link.active svg path {
   @apply fill-white;
+}
+
+input {
+  background: transparent;
+  outline: none;
+  border: none;
 }
