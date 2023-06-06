@@ -56,11 +56,11 @@
                   </div>
                 </div>
               </div>
-              <a href="#">Borish uchun qo’llanma</a>
-              <a href="#">Restoranlar</a>
-              <a href="#">Mehmonxonalar</a>
-              <a href="#">Maqolalar</a>
-              <a href="#">Turist uchun</a>
+              <a href="./qollanma.html">Borish uchun qo’llanma</a>
+              <a href="./restaranlar.html">Restoranlar</a>
+              <a href="./mexmonxonalar.html">Mehmonxonalar</a>
+              <a href="./maqolalar.html">Maqolalar</a>
+              <a href="./turist.html">Turist uchun</a>
             </li>
           </ul>
         </div>
@@ -77,12 +77,15 @@
       </header>
 
       <div>
-        <div class="grid grid-cols-1 pb-[100px] container">
-          <div class="mt-[40px]">
+        <div
+          class="relative container flex flex-col md:flex-row items-center justify-center md:justify-start h-[410px] md:h-[750px]"
+        >
+          <div class="flex flex-col">
             <div
-              class="fw-6 md:text-[60px] xs:text-[30px] md:w-[506px] xs:w-[282px] xs:text-center md:text-start text-white loraFont"
+              class="text-3xl md:text-6xl lg:text-[80px] md:w-[506px] xs:text-center md:text-start text-white loraFont"
             >
-              Go’zal buxoroning sirli chiroyi
+              Go’zal buxoroning <br class="sm:hidden" />
+              sirli chiroyi
             </div>
             <div
               class="fw-5 md:text-[24px] xs:text-[18px] md:w-[459px] xs:w-[298px] xs:text-center md:text-start text-white loraFont my-[24px]"
@@ -98,7 +101,9 @@
             </div>
           </div>
 
-          <div class="flex flex-col justify-end items-end">
+          <div
+            class="absolute bottom-0 md:bottom-10 right-3 md:right-0 flex flex-col justify-center items-center"
+          >
             <div class="mb-[10px] xs:hidden md:block">
               <img src="./assets/img/Next.png" />
             </div>
@@ -107,8 +112,8 @@
               O’zbek taomlari
             </div>
 
-            <div class="flex xs:my-5 md:my-0">
-              <div class="cursor-pointer mr-[8px]">
+            <div class="flex gap-5 xs:my-5 md:my-0">
+              <div class="cursor-pointer">
                 <img src="./assets/img/arrowLeftB.png" />
               </div>
               <div class="cursor-pointer">
@@ -125,24 +130,22 @@
       <section class="my-[86px]">
         <div class="grid md:grid-cols-2 xs:grid-cols-1 gap-5">
           <div class="rounded-[3px] shadow bg-white p-[50px]">
-            <div class="flex">
-              <div class="mr-2 fw-5 xs:text-[16px] md:text-[30px]">Qadimiy</div>
-              <div class="fw-6 text-[#00A307] xs:text-[16px] md:text-[30px]">
+            <div class="flex font-lora text-xl md:text-3xl">
+              <div class="mr-2">Qadimiy</div>
+              <div class="text-primary inline">
                 Buxoro
               </div>
             </div>
-            <div class="md:text-[60px] xs:text-[24px] mb-3 loraFont">
+            <div class="md:text-6xl xs:text-2xl mt-3 font-bold loraFont">
               Sexrini, o‘zingiz uchun kashf eting!
             </div>
-            <div
-              class="fw-4 mb:text-[20px] xs:text-[18px] text-[#616266] mb-[40px]"
-            >
+            <div class="mt-6 mb:text-[20px] xs:text-[18px] text-gray-400">
               Buxoro shahri Markaziy Osiyoda joylashgan tarixiy madaniyat
               Markazi. Qadimdan Buyuk ipak yo’lida joylashgan Buxoro, Islom
               tsivilizatsiyasiga katta xissa qo’shgan olimlarni etishtirib
               chiqargan yurtdir.
             </div>
-            <div>
+            <div class="mt-10">
               <button
                 class="bg-[#00B907] fw-6 text-[18px] py-[11px] px-[50px] rounded-[3px] text-white jostFont"
               >
@@ -782,12 +785,12 @@
   }
 
   .bg1 {
-    background-image: url(./assets/img/Rectangle\ 20.png);
+    background-image: url(./assets/img/rectangle\20png);
   }
   .bg2 {
-    background-image: url(./assets/img/Rectangle\ 21.png);
+    background-image: url(./assets/img/rectangle\21png);
   }
   .bg3 {
-    background-image: url(./assets/img/Rectangle\ 22.png);
+    background-image: url(./assets/img/rectangle\22png);
   }
 </style>
